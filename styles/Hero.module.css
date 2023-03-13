@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.innerContainer {
+  background-image: url("../public/img/background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 1224px;
+}
+.element {
+  width: 400px;
+  height: 100px;
+  background-color: rgb(236, 234, 234);
+  border-radius: 5%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: row;
+  padding-bottom: 15px;
+  margin-bottom: 19px;
+  gap: 20px;
+  border: 2px solid transparent;
+}
+.element:hover {
+  border: 2px solid rgb(85, 85, 199);
+  background-color: azure;
+}
+.active {
+  border: 2px solid rgb(85, 85, 199);
+  background-color: azure;
+}
+.activeHeader {
+  color: rgb(85, 85, 199);
+  text-decoration: underline;
+}
+
+.element:hover > h3 {
+  color: rgb(85, 85, 199);
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+}
