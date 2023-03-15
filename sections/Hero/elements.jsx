@@ -32,9 +32,10 @@ export const StyledDescription = styled((props) => (
   margin-top: -5px;
 `;
 
-export const StyledTextContainer = styled(({ ...props }) => (
-  <div {...props} />
-))``;
+export const StyledTextContainer = styled(({ ...props }) => <div {...props} />)`
+  flex-direction: row;
+  text-align: center;
+`;
 
 export const StyledBox = styled(({ ...props }) => <div {...props} />)`
   display: flex;
@@ -49,6 +50,4 @@ export const StyledBoxText = styled(({ ...props }) => <div {...props} />)`
   font-family: Georgia, serif;
   font-size: 16px;
 `;
-export const StyledBoxImg = styled(({ ...props }) => <div {...props} />)`
-  width: 400px;
-`;
+export const StyledBoxImg = styled(({ ...props }) => <div {...props} />)``;

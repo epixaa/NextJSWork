@@ -41,8 +41,15 @@
   color: rgb(85, 85, 199);
 }
 
-@media only screen and (max-width: 1024px) {
-  .container {
-    width: 100%;
+.test {
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+@media (max-width: 1024px) {
+  .test {
+    flex-direction: column;
   }
 }

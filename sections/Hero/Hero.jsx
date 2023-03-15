@@ -36,15 +36,7 @@ export const Hero = ({
             <StyledTitle>{title}</StyledTitle>
             <StyledDescription>{description}</StyledDescription>
           </StyledTextContainer>
-          <StyledTextContainer
-            style={{
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              flexDirection: "row",
-              gap: "60px",
-            }}
-          >
+          <div className={classNames(style.test)}>
             <Image
               src={image.src}
               alt={image.alt}
@@ -105,7 +97,7 @@ export const Hero = ({
                 );
               })}
             </StyledBox>
-          </StyledTextContainer>
+          </div>
         </StyledContainer>
       </div>
     </div>
